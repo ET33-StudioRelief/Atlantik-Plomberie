@@ -1,0 +1,7 @@
+.hub_see-all .hub_see-all-arrow-wrapper {
+  transition: transform 0.3s ease-out;
+}
+
+.hub_see-all:hover .hub_see-all-arrow-wrapper {
+  transform: translateX(0.5rem);
+}
