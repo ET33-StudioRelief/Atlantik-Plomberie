@@ -5,3 +5,27 @@
 .hub_see-all:hover .hub_see-all-arrow-wrapper {
   transform: translateX(0.5rem);
 }
+
+.hero_img-wrapper {
+  overflow: hidden; /* Assurez-vous que l'image ne dépasse pas du conteneur */
+  width: 100%; /* Ajoutez une largeur pour le conteneur */
+  height: 100vh; /* Ajoutez une hauteur pour le conteneur */
+}
+
+.hero_img {
+  object-fit: cover; /* Assurez-vous que l'image couvre tout le conteneur */
+  transition: transform 6s ease-in-out;
+}
+
+.hero_img-wrapper.zoom-in .hero_img {
+  transform: scale(1.2);
+}
+@media screen and (max-width: 993px) {
+  .layout423_row .layout423_card:nth-child(n + 3) {
+    display: none;
+  }
+
+  .layout423_card {
+    width: 100% !important;
+  }
+}

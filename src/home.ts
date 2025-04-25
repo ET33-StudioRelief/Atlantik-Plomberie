@@ -305,6 +305,7 @@ export const initHeroAnimation = () => {
 };
 
 export const initTestimonialParallax = () => {
+  if (window.innerWidth <= 767) return;
   const testimonialList = document.querySelector('.testimonial_list');
   const testimonialCards = document.querySelectorAll('.testimonial_card');
   const centerCard = document.querySelector('#testi-center');
